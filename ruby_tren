@@ -7,3 +7,4 @@ hash_var.each{|key, volume| puts "#{key}: #{volume}"}
 =begin
 commite	
 =end
+#commite
