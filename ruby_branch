@@ -1,0 +1,11 @@
+
+hash_var = Hash.new()
+hash_var = {first:1, second:2}
+hash_add = {third:3}
+hash_var.merge! = {first:1, second:2}
+hash_var.each{|key, volume| puts "#{key}: #{volume}"}
+=begin
+commite	
+=end
+#commite
+#branch
