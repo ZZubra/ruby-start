@@ -124,21 +124,38 @@ VI раздел. Код.
 
 
 
-class InputText
+class InputText #прием текста от пользователя, проверки на исключения
   #...
 end
 
-class SavedFile
+class SavedFile #работа с файлом, шаблон файла
   #...
 end
 
-class TextProcessing
+class TextProcessing #обработка текста по заданию
   #...
 end
 
-class UserInteraction
+class UserInteraction #взаимодействие с пользователем
   #...
 end
+
+
+
+gem install ruby-rtf
+gem 'rtf'
+Mime::Type.register "text/richtext", :rtf
+def export_file
+require 'rtf'
+    document = RTF::Document.new(RTF::Font.new(RTF::Font::ROMAN, 'Times New Roman'))
+    document.paragraph do |p|
+       p << "This is the first sentence in the paragraph. "
+       p << "This is the second sentence in the paragraph. "
+       p << "And this is the third sentence in the paragraph."
+    end
+    send_file document, :type=>"text/richtext"
+end
+
 
 
 
