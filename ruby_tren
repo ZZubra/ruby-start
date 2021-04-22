@@ -124,28 +124,26 @@ VI раздел. Код.
 
 
 
+class InputText
+  #...
+end
+
+class SavedFile
+  #...
+end
+
+class TextProcessing
+  #...
+end
+
+class UserInteraction
+  #...
+end
 
 
 
 
 
-
-
-
-
-
-
-
-hash_var = Hash.new()
-hash_var = {first:1, second:2}
-hash_add = {third:3}
-hash_var.merge! = {first:1, second:2}
-hash_var.each{|key, volume| puts "#{key}: #{volume}"}
-=begin
-commite	
-=end
-#commite
-#branch
 
 
 puts "Для подсчёта частоты букв \nв произвольной фразе \nвведите фразу на английском: "
@@ -179,10 +177,6 @@ for i in "a".."z"
   puts time_hash
   ht.merge! (time_hash)
 end
-
-ht.each {|key, volume| puts "#{key}: #{volume}"}
-
-
 
 hash_var = Hash.new()
 hash_var = {first:1, second:2}
