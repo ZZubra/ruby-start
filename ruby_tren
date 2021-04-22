@@ -142,27 +142,6 @@ end
 
 
 
-gem install ruby-rtf
-gem 'rtf'
-Mime::Type.register "text/richtext", :rtf
-def export_file
-require 'rtf'
-    document = RTF::Document.new(RTF::Font.new(RTF::Font::ROMAN, 'Times New Roman'))
-    document.paragraph do |p|
-       p << "This is the first sentence in the paragraph. "
-       p << "This is the second sentence in the paragraph. "
-       p << "And this is the third sentence in the paragraph."
-    end
-    send_file document, :type=>"text/richtext"
-end
-
-
-
-
-
-
-
-
 puts "Для подсчёта частоты букв \nв произвольной фразе \nвведите фразу на английском: "
 text = gets
 puts text
@@ -184,23 +163,3 @@ puts {text.lengh}
 #вывод алфавита с частотой букв во фразе
 ("a".."z").each {|letter| puts "#{letter}: #{freqs[letter]}"}
 
-************************************************
-
-ht = Hash.new
-ht = {first:1, seconb:2}
-
-for i in "a".."z"
-  time_hash = {i, 0}
-  puts time_hash
-  ht.merge! (time_hash)
-end
-
-hash_var = Hash.new()
-hash_var = {first:1, second:2}
-hash_add = {third:3}
-hash_var.merge! = {first:1, second:2}
-hash_var.each{|key, volume| puts "#{key}: #{volume}"}
-=begin
-commite	
-=end
-#commite
