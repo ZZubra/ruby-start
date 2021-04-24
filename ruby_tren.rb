@@ -130,6 +130,7 @@ end
 
 class SavedFile #работа с файлом, шаблон файла
   #...
+  #https://weril.me/ruby-gem-spreadsheet-dlya-rabotu-s-excel/ #работа с экселем с помощью gem Axlsx
 end
 
 class TextProcessing #обработка текста по заданию
