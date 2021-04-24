@@ -122,15 +122,23 @@ VI раздел. Код.
 ****************************************************************
 =end
 
-
+module Names
+  #...
+end
 
 class InputText #прием текста от пользователя, проверки на исключения
   #...
 end
 
-class SavedFile #работа с файлом, шаблон файла
+class DbProcessing #работа с базой данных
   #...
+end
+
+class FileProcessing #работа с файлом, шаблон файла
+  #...
+  #https://askdev.ru/q/razbor-faylov-xls-i-xlsx-ms-excel-s-pomoschyu-ruby-37913/ #перечень gems to xlsx
   #https://weril.me/ruby-gem-spreadsheet-dlya-rabotu-s-excel/ #работа с экселем с помощью gem Axlsx
+  #https://github.com/ruby-docx/docx #работа с вордом с помощью gem docx
 end
 
 class TextProcessing #обработка текста по заданию
